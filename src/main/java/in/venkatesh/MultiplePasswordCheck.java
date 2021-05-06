@@ -11,9 +11,7 @@ public class MultiplePasswordCheck {
 	 */
 	 public static boolean isValidPassword(String password)
 	    {
-	  
-	        
-	        String checks = "^(?=.*[0-9])"
+	           String checks = "^(?=.*[0-9])"
 	                       + "(?=.*[a-z])(?=.*[A-Z])"
 	                       + "(?=.*[@#$%^&+=])"
 	                       + "(?=\\S+$).{8,20}$";

@@ -36,13 +36,4 @@ public class RentalBookingTestCase {
 		assertFalse(isValid);
 	}
 }
-//	@Test
-//
-//	public void test1() {
-//		long mobno = 9600900509L;
-//		String password = "gunal";
-//		boolean output = LoginPage.loginValidation(mobno, password);
-//		assertFalse(output);
-//	}
-//
-//}
+

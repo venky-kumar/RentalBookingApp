@@ -20,6 +20,7 @@ public class RentalBooking {
 		SelectionPage.displayCarTypes();
 
 		MileageDetails.mileageDetails();
+	    
 		
 		int vehicleType = 1;
 		String type = "cycle";
