@@ -2,8 +2,11 @@ package in.venkatesh;
 
 import java.util.ArrayList;
 
-public class LoginArray {
-	public static void arraylogin() {
+public class UserValidation {
+	/**
+	 * This method store the user details
+	 */
+	public static void addUser() {
 		ArrayList<Detail> userDetail = new ArrayList<Detail>();
 		Detail user1 = new Detail();
 		user1.userMobileNo = 9790430272L;
@@ -18,11 +21,15 @@ public class LoginArray {
 		for (Detail user : userDetail) {
 			System.out.println(user.userMobileNo + "-" + user.password);
 		}
-	
+
 	}
+
+	/**
+	 * This method validates the mobile number and password
+	 */
 	public static boolean loginValidation(Long mobNo, String password) {
 		boolean result;
-		if (mobilenoValidation(mobNo)==true && password == "ragul") {
+		if (MobileNumberValidation(mobNo) == true && password == "ragul") {
 			result = true;
 			System.out.println("logged in successfully");
 		} else {
@@ -32,13 +39,17 @@ public class LoginArray {
 		return result;
 	}
 
-	public static boolean mobilenoValidation(Long mobNo)
-	{
-		String mobileNo=String.valueOf(mobNo);
-		boolean isValid=false;
-		if(mobNo !=0 && mobileNo.length()==10)
-		{
-			isValid=true;
+	/**
+	 * This method is used for validating mobile number
+	 * 
+	 * @param mobNo
+	 * @return
+	 */
+	public static boolean MobileNumberValidation(Long mobNo) {
+		String mobileNo = String.valueOf(mobNo);
+		boolean isValid = false;
+		if (mobNo != 0 && mobileNo.length() == 10) {
+			isValid = true;
 		}
 		return isValid;
 	}

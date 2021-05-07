@@ -3,7 +3,7 @@ package in.venkatesh;
 import java.util.HashMap;
 import java.util.Set;
 
-public class SelectionPage {
+public class VehicleSelection {
 
 	static HashMap<String, Integer> cyclePriceMap = new HashMap<String, Integer>();
 
@@ -18,15 +18,26 @@ public class SelectionPage {
 			System.out.println("The price for " + cycleType + " is " + value);
 		}
 	}
-    //To delete the cycleType......
+    /**
+     * To delete the cycleType......
+     * @param cycleType
+     */
 	public static void delCycleType(String cycleType) {
 		cyclePriceMap.remove(cycleType);
 	}
-    //To add the CycleType......
+    /**
+     * To add the CycleType......
+     * @param cycleType
+     * @param priceValue
+     */
 	public static void addCycleType(String cycleType, Integer priceValue) {
 		cyclePriceMap.put(cycleType, priceValue);
 	}
-    //To check the cycleType is added........
+    /**
+     * To check the cycleType is added........
+     * @param cycleType
+     * @return
+     */
 	public static boolean addCycleStatus(String cycleType) {
 		boolean isExists = false;
 		if (cyclePriceMap.containsKey(cycleType)) {
@@ -34,7 +45,11 @@ public class SelectionPage {
 		}
 		return isExists;
 	}
-    //To check the CycleTest is deleted........
+    /**
+     * To check the CycleTest is deleted........
+     * @param cycleType
+     * @return
+     */
 	public static boolean deleteStatus(String cycleType) {
 		boolean isExists = true;
 		if (cyclePriceMap.containsKey(cycleType)) {
@@ -57,15 +72,26 @@ public class SelectionPage {
 			System.out.println("The price for " + bikeType + " is " + value1);
 		}
 	}
-    //To delete the BikeType......
+    /**
+     * To delete the BikeType......
+     * @param bikeType
+     */
 	public static void delBikeType(String bikeType) {
 		bikePriceMap.remove(bikeType);
 	}
-    //To add the BikeType......
+    /**
+     * To add the BikeType......
+     * @param bikeType
+     * @param priceValue
+     */
 	public static void addBikeType(String bikeType, Integer priceValue) {
 		bikePriceMap.put(bikeType, priceValue);
 	}
-    //To check the BikeType is added......
+    /**
+     * To check the BikeType is added......
+     * @param bikeType
+     * @return
+     */
 	public static boolean addBikeStatus(String bikeType) {
 		boolean isExists = false;
 		if (bikePriceMap.containsKey(bikeType)) {
@@ -73,7 +99,11 @@ public class SelectionPage {
 		}
 		return isExists;
 	}
-	//To check the BikeType is deleted......
+	/**
+	 * To check the BikeType is deleted......
+	 * @param bikeType
+	 * @return
+	 */
 	public static boolean deletebikeStatus(String bikeType) {
 		boolean isExists = true;
 		if (bikePriceMap.containsKey(bikeType)) {
@@ -95,15 +125,26 @@ public class SelectionPage {
 			System.out.println("The price for " + carType + " is " + value2);
 		}
 	}
-    //To delete the CarType.......
+    /**
+     * To delete the CarType.......
+     * @param carType
+     */
 	public static void delcarType(String carType) {
 		bikePriceMap.remove(carType);
 	}
-    //To add the CarType......
+    /**
+     * To add the CarType......
+     * @param carType
+     * @param priceValue
+     */
 	public static void addCarType(String carType, Integer priceValue) {
 		bikePriceMap.put(carType, priceValue);
 	}
-    //To check the CarStatus is added.....
+    /**
+     * To check the CarStatus is added.....
+     * @param carType
+     * @return
+     */
 	public static boolean addCarStatus(String carType) {
 		boolean isExists = false;
 		if (carPriceMap.containsKey(carType)) {
@@ -111,7 +152,11 @@ public class SelectionPage {
 		}
 		return isExists;
 	}
-    //To check the CarStatus is deleted.....
+    /**
+     * To check the CarStatus is deleted.....
+     * @param carType
+     * @return
+     */
 
 	public static boolean deleteCarStatus(String carType) {
 		boolean isExists = true;

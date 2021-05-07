@@ -1,35 +1,32 @@
 package in.venkatesh;
 
-//import java.time.LocalDate;
-//import java.time.LocalTime;
-//import java.util.ArrayList;
-//import java.util.Scanner;
 
 public class RentalBooking {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-		LoginArray.arraylogin();
+		UserValidation.addUser();
 
-		LoginArray.loginValidation(9790430272l, "ragul");
+		UserValidation.loginValidation(9790430272l, "ragul");
 
-		SelectionPage.displayCycleTypes();
+		VehicleSelection.displayCycleTypes();
 
-		SelectionPage.displayBikeType();
+		VehicleSelection.displayBikeType();
 
-		SelectionPage.displayCarTypes();
+		VehicleSelection.displayCarTypes();
 
-		MileageDetails.mileageDetails();
+		VehicleMileageDetails.mileageDetails();
 	    
 		
 		int vehicleType = 1;
 		String type = "cycle";
 		int rentalHour = 8;
 		double vehicleCost = 100;
-		// This method is used for RentalCalculation
-		RentalCalculation.calculationOfCase(vehicleType, type, rentalHour, vehicleCost);
+		/**
+		 *  This method is used for RentalCalculation
+		 */
+		VehicleCostCalculation.calculationOfCase(vehicleType, type, rentalHour, vehicleCost);
 
-		VehicleDetails.noPlateDetails();
+		VehicleDetails.vehicleNumberPlateDetail();
 		
 	}
 
